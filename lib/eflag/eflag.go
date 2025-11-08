@@ -10,6 +10,7 @@ import (
 
 // SetFlagsFromEnvironment parses env variables and matches them to their
 // flag counterparts
+// shout out to https://utz.us/posts/go-flags-from-environment/
 func SetFlagsFromEnvironment() (error) {
 	var err error
 	flag.VisitAll(func(f *flag.Flag) {
